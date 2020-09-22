@@ -14,7 +14,6 @@ To install the script simply clone this repo and install the following dependenc
 
 ```
 pip3 install bs4 requests
-
 ```
 
 To run the script execute it such as this:
