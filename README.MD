@@ -8,7 +8,7 @@ Just as how well placed overlords provide more information than the occasional o
 
 The script crawls a list of websites, fetches the stock status and price of all rtx 3080 cards and generates a simple auto-refreshing html document out of it with a table.
 
-![RTX-scout in actiony](screenshot..png)
+![RTX-scout in actiony](screenshot.png)
 
 The table lists items with stock first, followed by all cards that don't have stock.
 
