@@ -22,8 +22,11 @@ config = {
 ```
 
 out: define the output of the html page, if you have apache set up, you can just let it output in your /var/www dir
+
 regenrate: the delay between each execution in seconds
+
 log: if the script has an actual hit, it will append the time, url and stock status as a log entry to the file at the given path (expect this to be empty until you go to sleep and miss out on any potential restock)
+
 max\_days: Some shops allow you to pre-order with some ridiculously distant potential delivery dates, I've set it to 30 days by default, anything beyond that is daft
 
 Currently parsed websites:
