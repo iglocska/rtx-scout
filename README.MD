@@ -4,7 +4,7 @@ RTX scout is a dumb webshop crawler meant to address an even dumber situation - 
 
 As many others, I've been trying to keep tabs on new stock showing up at the local webshops, to no avail. Despite having two separate pre-orders stuck in indefinite waiting queues with no delivery in sight, I wanted to make my own life easier to continuously keep an eye on potential stock.
 
-This tool is just a straight forward, dirty quick first bash at it, so your mileage may vary.
+Just as how well placed overlords provide more information than the occasional orbital scan, continuously being on the lookout for changes beats intermittent checks. RTX scout is crude, dirty tool, a quick first bash at it, so your mileage may vary.
 
 The script crawls a list of websites, fetches the stock status and price of all rtx 3080 cards and generates a simple auto-refreshing html document out of it with a table.
 
