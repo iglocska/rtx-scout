@@ -10,13 +10,28 @@ The script crawls a list of websites, fetches the stock status and price of all 
 
 The table lists items with stock first, followed by all cards that don't have stock.
 
+To install the script simply clone this repo and install the following dependencies:
+
+```
+pip3 install bs4 requests
+
+```
+
+To run the script execute it such as this:
+
+```
+su - www-data -s /bin/bash -c 'python3 /home/iglocska/rtx-scout/status.py'
+```
+
+Assuming the that you wish to run the script using the apache user under debian/ubuntu. If you just want to generate an html document and run it without a webserver this is not needed.
+
 To configure it, simply modify the config dictionary at the start of the file:
 
 ```
 config = {
-    'out': '/var/www/rtx/index.html',
+    'out': '/var/www/rtx-scout/index.html',
     'regenerate': 3, #in seconds,
-    'log': '/home/iglocska/rtx/log.log',
+    'log': '/home/iglocska/rtx-scout/log.log',
     'max_days': 30
 }
 ```
