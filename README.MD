@@ -48,10 +48,15 @@ config = {
 Currently parsed websites:
 
 caseking.de
+
 alternate.de
+
 proshop.de
+
 mindfactory.de
+
 ~~computeruniverse.de~~ (doesn't work, they load everything via ajax)
+
 cyberport.de
 
 If you would like to improve this mess, any pull requests are much appreciated.
