@@ -36,7 +36,10 @@ def execute():
     hits = [];
     for pos, result in enumerate(results):
        if result['status'] == 'ok':
-           testDate = dparser.parse(result['availability'], fuzzy=True, dayfirst=True)
+           try:
+               testDate = dparser.parse(result['availability'], fuzzy=True, dayfirst=True)
+           except:
+               testDate = False
            if (testDate):
                now = datetime.now()
                if ((testDate - now).days > config['max_days']):
@@ -238,7 +241,7 @@ def cyberport(results):
             name = row.attrs.get('data-product-name')
             temp['name'] = f"<a href=\"https://cyberport.de/{temp['url']}\">{name}</a>"
             temp['price'] = int(float(row.attrs.get('data-product-price')))
-            stock_status = row.find_all('div', class_="tooltipAvaibilityParent")[0].span.text.strip()
+            stock_status = row.find_all('span', class_="tooltipAppend")[0].text.strip()
             temp['status'] = 'fail'
             temp['availability'] = stock_status
             if (stock_status != 'Noch nicht verfügbar'):
