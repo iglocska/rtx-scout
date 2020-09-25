@@ -46,13 +46,12 @@ config = {
 **max\_days**: Some shops allow you to pre-order with some ridiculously distant potential delivery dates, I've set it to 30 days by default, anything beyond that is daft
 
 Currently parsed websites:
-
-caseking.de
-alternate.de
-proshop.de
-mindfactory.de
-~~computeruniverse.de~~ (doesn't work, they load everything via ajax)
-cyberport.de
+* caseking.de
+* alternate.de
+* proshop.de
+* mindfactory.de
+* ~~computeruniverse.de~~ (doesn't work, they load everything via ajax)
+* cyberport.de
 
 If you would like to improve this mess, any pull requests are much appreciated.
 
