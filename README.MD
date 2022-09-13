@@ -56,3 +56,5 @@ Currently parsed websites:
 If you would like to improve this mess, any pull requests are much appreciated.
 
 The bot purely fetches and logs data, no purchases are made and there are no plans to implement anything of the sort.
+
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
